@@ -1,6 +1,7 @@
 /*Selects All*/
 *{
-    
+
+    cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC") 14 0, pointer;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -10,7 +11,7 @@ p {
     margin: 0;
     padding: 0;
     color: white;
-    font-size: 24px;
+    
     font-family: 'Press Start 2P', cursive;
 }
 h3{
@@ -53,7 +54,8 @@ hr {
 }
 /* Set Name & Link Fonts to 8bit & beige color */
 .links a, .Name{
-    color: #f2e6d9;
+	text-decoration: none !important;
+    color: #f2e6d9 !important;
     font-family: 'Press Start 2P', cursive;
 }
 /* Styles the home page background */
@@ -156,6 +158,7 @@ hr {
 }
 .fa-2x:hover{
     transform: scale(2);
+    opacity: .8;
 }
 
 .fa-2x{
@@ -169,17 +172,15 @@ hr {
 
 .myProjects {
     display: block;
-    overflow: hidden;
-    height: inherit;
+    
+    height: 110vh;
     width: 100%;
-    height: 105%;
-    background: linear-gradient(to bottom, #000000 5%, #291735 100%);
+    
+    background: linear-gradient(to top,#200235 5%, #000000 100%);
 }
 .project-title {
     color: #f2e6d9;
     margin: 0;
-    margin-top: 5%; 
-    margin-bottom: 2.5%;
     font-family: 'Press Start 2P', cursive;
     text-align: center
 }
@@ -188,19 +189,19 @@ hr {
     background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #000000 5%, #291735 100%);
+    height: 110%;
+    background: linear-gradient(to bottom, #000000 5%, #200235 100%);
 }
 .resume {
     margin: 0;
-    padding: .4em;
+   
     color: #f2e6d9;
     font-family: 'Press Start 2P', cursive;
     text-align: center
 }
 
 .container {
-    height: 100%;
+    height: inherit;
     margin: auto;
     width: 75%;
     z-index: -1;
@@ -264,17 +265,12 @@ hr {
  height: 100%;
  background-color: rgba(0, 0, 0, 0.5);
 }
-.btn-dark, .btn-light{
 
-}
-.nes-btn is-primary {
-    font-family: 'Press Start 2P', cursive;
-}
 #uno {
     background: red;
-    display: grid;
-    grid-template-columns: 50% auto ;
-    grid-template-rows: 4fr .30fr;
+    display: grid !important;
+    grid-template-columns: 50% auto !important;
+    grid-template-rows: 4fr .30fr !important;
     grid-gap: 1px;
   /*  background-image: url(projects/project1.jpg);
     background-size: 100% 100%; */
@@ -320,7 +316,7 @@ hr {
     grid-column-start: 1;
     grid-column-end: 3;
     margin: 0;
-    padding-top: 3em;
+    
     
 }
 #center {
@@ -328,19 +324,54 @@ hr {
     vertical-align: middle;
     margin: 0;
 }
+
+
 .gridtut {
-    padding-top: 1.5%;
-    padding-bottom: 3.5%;
+	padding-top: 3.5vh;
+	padding-bottom: 1%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 30% auto ;
-    grid-template-rows: .75fr 2fr  2fr 2fr;
+    grid-template-columns: 30% auto !important;
+    grid-template-rows: .25fr 1fr  1fr 1fr !important;
+    
     grid-gap: 15px;
     
 }
+.a {
+	margin: 0;
+	padding: 0;
+}
+.nes-btn {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.pdf{
+    padding: 2%;
+    height: 85%;
+}
 
+.aboutme {
+    height: 105vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #000000 5%, #200235 100%);
+}
 
+#about-title{
+    padding: 3%;
+    color: #f2e6d9;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center
+}
+
+#resume-title{
+    padding-top: 3%;
+    color: #f2e6d9;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center
+}
 @media screen and (max-width: 950px) {
     .text{
         left: 5%;
@@ -379,4 +410,13 @@ hr {
         text-align: center;
         
     }
+}
+
+.btn-light:hover {
+    transform: scale(1.25);
+    opacity: .9;
+}
+
+.nes-button {
+
 }
